@@ -1,11 +1,11 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext"; 
-import Home from "./pages/Home";
+import Home from "./Pages/Home";
 import Layout from "./components/Layout";
 import ProtectedRoute from "./components/ProtectedRoute";
-import FormLogin from "./pages/FormLogin"; 
-import FormRegister from "./pages/FormRegister";
+import FormLogin from "./Pages/FormLogin"; 
+import FormRegister from "./Pages/FormRegister";
 
 const DetailProduk = lazy(() => import("./Pages/DetailProduk"));
 const Keranjang = lazy(() => import("./Pages/Keranjang"));
