@@ -1,16 +1,77 @@
-# React + Vite
+# MiniShop 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi web e-commerce *MiniShop* yang dibangun menggunakan **React**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Fitur Utama
 
-## React Compiler
+**Autentikasi Pengguna:** Login dan Register dengan *Context API* serta proteksi halaman (*Protected Route*).
+**Katalog Produk:** Menampilkan daftar produk dengan kartu komponen (*ProdukCard*).
+**Detail Produk:** Menampilkan rincian informasi dan deskripsi produk.
+**Manajemen Keranjang:** Menambah, mengubah jumlah, serta menghitung total harga belanjaan secara otomatis.
+**Optimasi Performa:** Menggunakan `React.lazy` dan `Suspense` untuk *Lazy Loading* komponen halaman.
+**Pengujian Otomatis (Unit Testing):** Pengujian komponen dan context menggunakan **Vitest** dan **React Testing Library**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Teknologi yang Digunakan
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend:** React.js, React Router DOM, Tailwind CSS
+**State Management:** React Context API (`AuthContext`, `KeranjangContext`)
+**Testing:** Vitest, React Testing Library
+**Build Tool:** Vite
+**Deployment:** Vercel
+
+---
+
+## Struktur Folder Proyek
+
+minishop/
+├── dist/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── data/
+│   ├── hooks/
+│   ├── Pages/
+│   ├── test/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
+
+
+
+Cara Instalasi & Menjalankan Proyek
+1. Prasyaratan
+**Pastikan kamu sudah menginstal Node.js di komputer kamu.
+
+2. Langkah-Langkah
+**Clone Repository
+
+    1. git clone <https://github.com/denisyalhendraputra-sketch/minishop>
+        cd minishop
+        Instal Dependensi
+
+
+    2. npm install
+        Jalankan Local Development Server
+
+
+    3. npm run dev
+        Buka browser dan akses http://localhost:5173.
+
+3. Cara Menjalankan Pengujian (Testing)
+    Untuk menjalankan unit test yang telah dibuat menggunakan Vitest:
+    npm run test
