@@ -4,8 +4,8 @@ import { AuthProvider } from "./context/AuthContext";
 import Home from "./pages/Home";
 import Layout from "./components/Layout";
 import ProtectedRoute from "./components/ProtectedRoute";
-import FormLogin from "./Pages/FormLogin"; 
-import FormRegister from "./Pages/FormRegister";
+import FormLogin from "./pages/FormLogin"; 
+import FormRegister from "./pages/FormRegister";
 
 const DetailProduk = lazy(() => import("./Pages/DetailProduk"));
 const Keranjang = lazy(() => import("./Pages/Keranjang"));
