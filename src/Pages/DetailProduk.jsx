@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { daftarProduk } from "../data/produk";
+import { daftarProduk } from "../data/Produk";
 import Button from "../components/Button";
 import { useKeranjang } from "../context/KeranjangContext";
 import { useEffect, useState } from "react";
