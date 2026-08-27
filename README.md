@@ -47,7 +47,7 @@ Pastikan **Node.js** dan **npm** sudah terpasang.
 Jika menggunakan Git:
 
 ```bash
-git clone <URL_REPOSITORY>
+git clone <https://github.com/denisyalhendraputra-sketch/minishop.git>
 cd minishop
 ```
 
