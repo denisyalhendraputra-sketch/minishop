@@ -43,7 +43,6 @@ function ProdukCard({ produk }) {
         </div>
       </div>
 
-      {/* Area Tombol Aksi */}
       <div className="mt-4 flex flex-col gap-2">
         {/* Tombol Lihat Detail */}
         <Link to={`/detail-produk/${produk.id}`}>
